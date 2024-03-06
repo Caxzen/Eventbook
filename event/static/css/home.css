@@ -1,0 +1,419 @@
+body {
+    margin: 0;
+    padding: 0;
+    top:0px;
+    font-size: 28px;
+    margin-top: 0; /* Remove any top margin */
+    padding-top: 0; /* Remove any top padding */
+    background-color: #000;
+    
+  }
+
+
+.fade-text {
+    animation: fade 2s ease-in-out; /* Apply the fade animation */
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0; /* Start with opacity 0 (fully transparent) */
+    }
+    100% {
+        opacity: 1; /* End with opacity 1 (fully opaque) */
+    }
+}
+
+
+
+
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #000000;
+position: sticky;
+top: 0;
+z-index: 100;
+}
+
+li {
+float: left;
+}
+
+.header {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 0; 
+    left: 0;
+	background-image: url("weather2.jpg");
+    background-size: cover;
+    height: 200px;
+}
+
+.temp {
+    align-items: center;
+    padding-top: 20px;
+}
+
+
+
+
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+li a:hover {
+background-color: #35ebf8;
+}
+
+.active {
+background-color: #4CAF50;
+}
+
+
+
+
+.gridd {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 5px;
+    gap: 5px;
+}
+
+
+button1 {
+    --width: 150px;
+    --timing: 2s;
+    border: 0;
+    width: var(--width);
+    padding-block: 1em;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1em;
+    background: rgb(64, 192, 87);
+    transition: all 0.2s;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  button1:hover {
+    background-image: linear-gradient(
+      to right,
+      rgb(250, 82, 82),
+      rgb(250, 82, 82) 16.65%,
+      rgb(190, 75, 219) 16.65%,
+      rgb(190, 75, 219) 33.3%,
+      rgb(76, 110, 245) 33.3%,
+      rgb(76, 110, 245) 49.95%,
+      rgb(64, 192, 87) 49.95%,
+      rgb(64, 192, 87) 66.6%,
+      rgb(250, 176, 5) 66.6%,
+      rgb(250, 176, 5) 83.25%,
+      rgb(253, 126, 20) 83.25%,
+      rgb(253, 126, 20) 100%,
+      rgb(250, 82, 82) 100%
+    );
+    animation: var(--timing) linear dance6123 infinite;
+    transform: scale(1.1) translateY(-1px);
+  }
+  
+  @keyframes dance6123 {
+    to {
+      background-position: var(--width);
+    }
+  }
+
+
+
+
+
+.poster {
+	height: 90vh;
+	max-width: 700px;
+	width: 100%;
+	background-image: url("trees-bkg.jpg");
+	background-size: cover;
+	background-position-y: -100px;
+	background-repeat: no-repeat;
+	position: relative;
+	font-family: "PT Sans Narrow", sans-serif;
+	overflow: hidden;
+	
+	border: 10px solid rgb(34, 33, 33);
+}
+
+.poste {
+	height: 90vh;
+	max-width: 700px;
+	width: 100%;
+	background-image: url("trees-bkg1.jpg");
+	background-size: cover;
+	background-position-y: -100px;
+	background-repeat: no-repeat;
+	position: relative;
+	font-family: "PT Sans Narrow", sans-serif;
+	overflow: hidden;
+	border: 10px solid rgb(34, 33, 33);
+}
+
+
+
+.lens-flare {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(
+			45deg,
+			rgba(72, 33, 24, 0.2) 0%,
+			rgba(72, 33, 24, 0.2) 36%,
+			rgba(107, 68, 41, 0.2) 36%,
+			rgba(107, 68, 41, 0.2) 51%,
+			rgba(141, 103, 58, 0.2) 51%,
+			rgba(141, 103, 58, 0.2) 64%,
+			rgba(176, 137, 74, 0.2) 64%,
+			rgba(176, 137, 74, 0.2) 76%,
+			rgba(210, 172, 91, 0.2) 76%,
+			rgba(210, 172, 91, 0.2) 100%
+		),
+		linear-gradient(
+			135deg,
+			rgba(16, 29, 192, 0.2) 0%,
+			rgba(16, 29, 192, 0.2) 40%,
+			rgba(61, 43, 200, 0.2) 40%,
+			rgba(61, 43, 200, 0.2) 41%,
+			rgba(107, 57, 208, 0.2) 41%,
+			rgba(107, 57, 208, 0.2) 47%,
+			rgba(152, 70, 215, 0.2) 47%,
+			rgba(152, 70, 215, 0.2) 88%,
+			rgba(198, 84, 223, 0.2) 88%,
+			rgba(198, 84, 223, 0.2) 91%,
+			rgba(243, 98, 231, 0.2) 91%,
+			rgba(243, 98, 231, 0.2) 100%
+		),
+		linear-gradient(
+			90deg,
+			rgb(255, 136, 53) 0%,
+			rgb(255, 136, 53) 10%,
+			rgb(246, 113, 64) 10%,
+			rgb(246, 113, 64) 12%,
+			rgb(236, 89, 75) 12%,
+			rgb(236, 89, 75) 24%,
+			rgb(227, 66, 87) 24%,
+			rgb(227, 66, 87) 29%,
+			rgb(217, 42, 98) 29%,
+			rgb(217, 42, 98) 40%,
+			rgb(208, 19, 109) 40%,
+			rgb(208, 19, 109) 100%
+		);
+	mix-blend-mode: hard-light;
+	opacity: 0.7;
+}
+
+.stripes {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	position: relative;
+}
+
+.stripe-block {
+	position: absolute;
+	height: 700px;
+	width: 300px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	opacity: 0.3;
+}
+.stripe-block div {
+	border-right: 1px solid var(--white);
+	opacity: 0.5;
+}
+
+.str1 {
+	transform: translate(-200px, -100px) rotateZ(-45deg);
+}
+.str2 {
+	bottom: 0;
+	right: 0;
+	transform: translate(30%, 60%) rotateZ(-45deg);
+}
+.str3 {
+	top: 0;
+	right: 0;
+	transform: translate(60%, -40%) rotateZ(45deg);
+}
+
+.info {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+	display: grid;
+	justify-items: center;
+	color: var(--white);
+}
+
+/* HEADER 
+---------------------- */
+.info header {
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	padding: 2em;
+}
+.info header h3 {
+	font-size: 2rem;
+	font-weight: normal;
+}
+
+/* MAIN 
+---------------------- */
+.info main {
+	text-align: center;
+}
+
+svg#text-1 {
+	width: 450px;
+	height: 100px;
+}
+svg#text-2 {
+	width: 300px;
+	height: 80px;
+}
+svg rect {
+	width: 100%;
+	height: 100%;
+	fill: var(--white);
+}
+svg text {
+	font-size: 6rem;
+	text-transform: uppercase;
+	font-family: "Catamaran", sans-serif;
+	fill: #000;
+}
+
+/* SECTIONS 
+---------------------- */
+section#date {
+	display: grid;
+	grid-template-columns: repeat(3, 80px);
+	grid-column-gap: 10px;
+}
+.circle-item {
+	width: 80px;
+	height: 80px;
+	display: grid;
+	place-items: center;
+	text-transform: uppercase;
+	font-size: 1.75rem;
+	border: 2px solid var(--white);
+	opacity: 0.8;
+	border-radius: 50%;
+	mix-blend-mode: overlay;
+}
+
+section#talent {
+	padding: 10px;
+}
+.dj-title {
+	padding: 2px 5px;
+	text-transform: uppercase;
+	background-color: var(--white);
+	color: #ffffff;
+	letter-spacing: 2px;
+	width: min-content;
+	margin: 0 auto;
+	mix-blend-mode: screen;
+}
+.dj-list {
+	margin-top: 10px;
+	display: grid;
+	grid-template-columns: repeat(
+		min-content,
+		20px,
+		min-content,
+		20px,
+		min-content
+	);
+	grid-auto-flow: column;
+}
+.dj-list li {
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	padding: 0 5px;
+	letter-spacing: 2px;
+}
+
+/* FOOTER 
+---------------------- */
+footer {
+	padding: 10px;
+}
+.tickets {
+	padding: 5px 0;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 1px;
+	border-top: 1px solid var(--white);
+	border-bottom: 1px solid var(--white);
+}
+.venue {
+	padding: 1em;
+	text-align: center;
+	text-transform: uppercase;
+}
+.venue h3,
+.venue p {
+	letter-spacing: 2px;
+}
+
+@media screen and (max-width: 600px) {
+	.poster {
+		height: 100vh;
+		background-position-y: 0px;
+	}
+
+	.info header h3 {
+		font-size: 1.4rem;
+	}
+
+	svg#text-1 {
+		width: 360px;
+		height: 70px;
+	}
+	svg#text-2 {
+		width: 240px;
+		height: 60px;
+	}
+
+	section#date {
+		grid-template-columns: repeat(3, 60px);
+	}
+	.circle-item {
+		width: 60px;
+		height: 60px;
+		font-size: 1.3rem;
+	}
+	.dj-title,
+	.tickets,
+	.venue {
+		font-size: 0.9rem;
+	}
+	.dj-list li {
+		font-size: 1.2rem;
+	}
+}

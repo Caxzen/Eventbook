@@ -1,0 +1,43 @@
+{% load static %}
+<html>
+    <head>
+        <title>Register</title>
+        <link rel="stylesheet" href="{% static 'css\register.css' %}">
+    </head>
+    <body>
+       
+        <div class="box">
+            <form action="/home" method="post">
+                {% csrf_token %}
+                <div class="form">
+                    <h2>Sign in</h2>
+                    <div class="input">
+                        <input type="text" required="required" name="regno" id="regno">
+                        <span>User name</span>
+                        <i></i>
+                    </div>
+                    <div class="input">
+                        <input type="password" required="required" name="pass" id="pass">
+                        <span>Password</span>
+                        <i></i>
+                    </div>
+                    <br>
+                    
+                
+                    <input type="submit" value="LOGIN" id="submitbutton"></a>
+                    {% if  custom_message %}
+                        <div class="signup">
+                            <p>{{ custom_message }}</p>
+                            <br>
+                            <p>Please Log in</p>
+                        </div>
+                    {% else %}
+                        <div class="signup">
+                            <span> Don't have account..  <a href="/register" style="color: red;">Register</a> </span>
+                        </div>
+                    {% endif %}
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

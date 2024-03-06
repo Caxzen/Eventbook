@@ -1,0 +1,242 @@
+{% load static %}
+
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="{% static 'css\home.css' %}">
+</head>
+
+
+
+
+
+<div class="header">
+    <div class="temp">
+        <p style="font-size: larger;text-align: center;z-index: -1;"><b>Chennai</b></p>
+        <p style="font-size: 50px;text-align: center;line-height: 0.10;padding-bottom: -10px;">{{ weather_data1.temperature }}° {{ weather_data1.description }} </p>
+
+    </div>
+</div>
+
+<body>
+    
+    
+
+
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li style="float:right"><a class="active" href="event">Register</a></li>
+    </ul>
+    
+    <div class="gridd">
+        <div class="grid-item">
+            <div class="poster">
+                <div class="lens-flare"></div>
+                <div class="stripes">
+                    <div class="stripe-block str1">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="stripe-block str2">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="stripe-block str3">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="info">
+            
+                    <header>
+                        <h3>Codepen</h3>
+                    </header>
+            
+                    <main>
+                        <svg id="text-1" viewBox="0 0 450 100">
+                            <rect mask="url(#knockout-text-1)" />
+            
+                            <mask id="knockout-text-1">
+                                <rect />
+                                <text x="50%" y="80" text-anchor="middle">Winter</text>
+                            </mask>
+                        </svg>
+            
+                        <svg id="text-2" viewBox="0 0 450 100">
+                            <rect mask="url(#knockout-text-2)" />
+            
+                            <mask id="knockout-text-2">
+                                <rect />
+                                <text x="50%" y="80" text-anchor="middle">Lounge</text>
+                            </mask>
+                        </svg>
+                    </main>
+            
+                    <section id="date">
+                        <div class="circle-item">22</div>
+                        <div class="circle-item">July</div>
+                        <div class="circle-item">2023</div>
+                    </section>
+            
+                    
+            
+                    <footer>
+                        <div class="tickets">
+                            $55 Pre Sale Tickets / 18+ Ages / $30 at Door
+                        </div>
+                        <div class="venue">
+                            <h3>Club Mantis</h3>
+                            <p>Area 51, 48 Street, CHN</p>
+                            <p><small>www.clubmantis.com</small></p>
+                        </div>
+                    </footer>
+            
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="grid-item">
+            <h1 style="color: rgb(255, 255, 255); padding-left: 130px;">Event description</h1>
+            <div class="fade-text">
+                <p style="color: white; padding-right: 200px; ">
+                    Get ready to put on your dancing shoes and join us for an electrifying evening of music, movement, and merriment at our club's upcoming event, "Groove Fusion: A Night of Dance and Celebration."Step onto the dance floor and let loose as we bring together dance enthusiasts from all walks of life for a night filled with rhythm, energy, and unforgettable memories. Whether you're a seasoned dancer or just looking to shake off the stress of the week, this event promises an exhilarating experience for everyone.
+                    Immerse yourself in a diverse array of dance styles and genres, from high-energy hip-hop and sizzling salsa to sensual bachata and elegant ballroom. Our talented DJs and live performers will keep the beats pumping all night long, ensuring a non-stop dance party that will have you moving and grooving until the early hours.
+                </p>
+            </div>
+            <div style="padding-top: 100px;padding-left: 290px;">
+                <button1 onclick="redirectToPage()" style="padding-left: 30px;padding-right: 30px;">Register</button1>
+            </div>
+            <script>
+                function redirectToPage() {
+                    // Replace 'destination-page.html' with the URL of the page you want to redirect to
+                    window.location.href = 'event';
+                }
+            </script>            
+
+
+        </div>
+
+    </div>    
+    <br>
+    <br>
+
+    <div class="gridd">
+        <div class="grid-item">
+            <div class="poste">
+                <div class="lens-flare"></div>
+                <div class="stripes">
+                    <div class="stripe-block str1">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="stripe-block str2">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="stripe-block str3">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="info">
+            
+                    <header>
+                        <h3>Codepen</h3>
+                      
+                    </header>
+            
+                    <main>
+                        <svg id="text-1" viewBox="0 0 450 100">
+                            <rect mask="url(#knockout-text-1)" />
+            
+                            <mask id="knockout-text-1">
+                                <rect />
+                                <text x="50%" y="80" text-anchor="middle">Summer</text>
+                            </mask>
+                        </svg>
+            
+                        <svg id="text-2" viewBox="0 0 450 100">
+                            <rect mask="url(#knockout-text-2)" />
+            
+                            <mask id="knockout-text-2">
+                                <rect />
+                                <text x="50%" y="80" text-anchor="middle">Lounge</text>
+                            </mask>
+                        </svg>
+                    </main>
+            
+                    <section id="date">
+                        <div class="circle-item">22</div>
+                        <div class="circle-item">Jan</div>
+                        <div class="circle-item">2022</div>
+                    </section>
+            
+                   
+            
+                    <footer>
+                        <div class="tickets">
+                            $25 Pre Sale Tickets / 18+ Ages / $30 at Door
+                        </div>
+                        <div class="venue">
+                            <h3>Club Sicontis</h3>
+                            <p>Level 2, 48 Fort Street, AKL</p>
+                            <p><small>www.clubsicontis.com</small></p>
+                        </div>
+                    </footer>
+            
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="grid-item">
+            <h1 style="color: rgb(255, 255, 255); padding-left: 130px;">Event description</h1>
+            <p style="color: white; padding-right: 200px;">
+                Get ready to put on your dancing shoes and join us for an electrifying evening of music, movement, and merriment at our club's upcoming event, "Groove Fusion: A Night of Dance and Celebration."Step onto the dance floor and let loose as we bring together dance enthusiasts from all walks of life for a night filled with rhythm, energy, and unforgettable memories. Whether you're a seasoned dancer or just looking to shake off the stress of the week, this event promises an exhilarating experience for everyone.
+                Immerse yourself in a diverse array of dance styles and genres, from high-energy hip-hop and sizzling salsa to sensual bachata and elegant ballroom. Our talented DJs and live performers will keep the beats pumping all night long, ensuring a non-stop dance party that will have you moving and grooving until the early hours.
+            
+            <div style="padding-top: 100px;padding-left: 290px;">
+                <button1 onclick="redirectToPage()" style="padding-left: 30px;padding-right: 30px;">Register</button1>
+            </div>
+                        
+
+
+        </div>
+
+    </div>    
+    
+    
+        
+       
+        
+        
+
+    <script type="text/javascript">
+        (function(d, m){
+            var kommunicateSettings = 
+                {"appId":"1cbffa7bc8fff9fd4623dfdae52f79430","popupWidget":true,"automaticChatOpenOnNavigation":true};
+            var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+            s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+            var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+            window.kommunicate = m; m._globals = kommunicateSettings;
+        })(document, window.kommunicate || {});
+    /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+    </script>
+
+
+</body>
+</html>
+
+
